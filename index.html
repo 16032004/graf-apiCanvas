@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>API Canvas - Figuras</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 1rem;
+    }
+    h1 {
+      text-align: center;
+    }
+    .toolbar {
+      text-align: center;
+      margin-bottom: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+    button {
+      padding: 0.4rem 0.8rem;
+      border-radius: 0.4rem;
+      border: 1px solid #ccc;
+      cursor: pointer;
+      background-color: #fff;
+    }
+    button:hover {
+      background-color: #e0e0e0;
+    }
+    .canvas-wrapper {
+      display: flex;
+      justify-content: center;
+    }
+    canvas {
+      background-color: #ffffff;
+      border: 1px solid #ccc;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <h1>API Canvas - Ejemplos</h1>
+
+  <div class="toolbar">
+    <button data-example="rect">Rectángulo</button>
+    <button data-example="triangle">Triángulo</button>
+    <button data-example="happy">Happy face</button>
+    <button data-example="lines">Líneas</button>
+    <button data-example="arcs">Arcos</button>
+    <button data-example="curves">Curvas Bézier / cuadráticas</button>
+    <button data-example="combo">Combinación de figuras</button>
+  </div>
+
+  <div class="canvas-wrapper">
+    <canvas id="canvas" width="500" height="400"></canvas>
+  </div>
+
+  <!-- OJO: el script va al final del body -->
+  <script src="main.js"></script>
+</body>
+</html>
